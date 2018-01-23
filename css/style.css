@@ -36,6 +36,7 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   position: relative;
+  background-color: #403e2c;
   background-image: url("../img/header-background.jpg");
   background-repeat: no-repeat;
   background-position: 0 -901px;
@@ -267,12 +268,15 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0;
+}
+
+.slider-radio-label:not(:last-child) {
+  margin-bottom: 14px;
 }
 
 .slider-radio-label {
   position: relative;
-
-  margin-bottom: 14px;
 
   cursor: pointer;
 }
@@ -288,6 +292,183 @@ input[type="radio"].visually-hidden {
   width: 10px;
   height: 10px;
   background-color: #e8be7b;
+}
+
+.slider-radio:not(:checked):hover + .radio-indicator {
+  width: 8px;
+  height: 8px;
+  margin: -1px 0 -1px;
+}
+
+.service {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 112px 213px 110px 215px;
+  color: #3a3a3a;
+
+
+}
+
+/* .service::before {
+  content: "";
+  background-color: #fbfcf5;
+  display: block;
+  position: absolute;
+}
+
+.service::after {
+  content: "";
+  background-color: #fbfcf5;
+  bottom: 0;
+  display: block;
+  height: 50%;
+  left: 0;
+
+  right: 0;
+  transform: skewY(-1.5deg);
+  transform-origin: 100%;
+  z-index: -1;
+} */
+
+
+.service-text-wrapper {
+  margin-bottom: 78px;
+}
+
+.service-caption {
+  margin: 0 0 20px;
+
+  font-family: "Butler", "Times New Roman", serif;
+  font-size: 48px;
+  font-weight:  500;
+  line-height: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+.service-description {
+  margin: 0;
+
+  text-align: center;
+  letter-spacing: -0.03px;
+}
+
+.services-list {
+  display: flex;
+  margin: 0 0 56px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.services-list li:not(:last-child) {
+  margin-right: 54px;
+}
+
+.service-link {
+  display: block;
+  box-sizing: border-box;
+  width: 180px;
+  padding: 125px 0 30px;
+
+  font-family: "Butler", "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.service-link:hover {
+  box-shadow: 1.805px 2.396px 16px 0px rgba(32, 32, 32, 0.1);
+}
+
+.about-link {
+  background-image: url("../img/sheet-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 74px 48px;
+}
+
+.wedding-link {
+  background-image: url("../img/heart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 66px 47px;
+}
+
+.party-link {
+  background-image: url("../img/cake-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 73px 48px;
+}
+
+.beauty-link {
+  background-image: url("../img/bag-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 70px 48px;
+}
+
+.course-link {
+  background-image: url("../img/notebook-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 70px 48px;
+}
+
+.service-info {
+  display: flex;
+}
+
+.info-image {
+  box-shadow: 10px 10px #e8be7b;
+}
+
+.info-section {
+  padding: 78px 0 15px 70px;
+
+}
+
+.info-section-caption {
+  box-sizing: border-box;
+  width: 340px;
+  margin: 0 0 13px;
+
+  font-family: "Butler", "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: capitalize;
+}
+
+.info-section-text {
+  margin: 0 0 30px;
+  line-height: 26px;
+}
+
+.info-section-link {
+  position: relative;
+  font-size: 18px;
+  color: #d6a862;
+  text-transform: uppercase;
+}
+
+.info-section-link:hover {
+  border-bottom: 1px solid #d6a862;
+}
+
+.info-section-link::after {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: 135px;
+  width: 33px;
+  height: 10px;
+  background-image: url("../img/right-pointer.svg");
+  background-repeat: no-repeat;
 }
 
 @font-face {
