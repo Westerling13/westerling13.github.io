@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+   box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,7 +17,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  color: #ffffff;
+  color: #3a3a3a;
 }
 
 a {
@@ -36,6 +44,9 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   position: relative;
+
+  color: #ffffff;
+
   background-color: #403e2c;
   background-image: url("../img/header-background.jpg");
   background-repeat: no-repeat;
@@ -149,14 +160,16 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.navigation-list {
+.navigation-list,
+.footer-navigation-list {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.navigation-list li:not(:last-child) {
+.navigation-list li:not(:last-child),
+.footer-navigation-list li:not(:last-child) {
   margin-right: 31px;
 }
 
@@ -218,7 +231,6 @@ input[type="radio"].visually-hidden {
 
 .header-button {
   display: block;
-  box-sizing: border-box;
   width: 180px;
   padding: 13px 0 15px;
 
@@ -305,7 +317,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 112px 213px 119px 215px;
+  padding: 112px 213px 120px 215px;
   color: #3a3a3a;
 
 }
@@ -370,7 +382,6 @@ input[type="radio"].visually-hidden {
 
 .service-link {
   display: block;
-  box-sizing: border-box;
   width: 180px;
   padding: 125px 0 30px;
 
@@ -431,7 +442,6 @@ input[type="radio"].visually-hidden {
 }
 
 .info-section-caption {
-  box-sizing: border-box;
   width: 340px;
   margin: 0 0 13px;
 
@@ -472,7 +482,6 @@ input[type="radio"].visually-hidden {
 
 .gallery {
   position: relative;
-  box-sizing: border-box;
   width: 1600px;
   height: 800px;
 
@@ -487,7 +496,6 @@ input[type="radio"].visually-hidden {
   left: 315px;
 
   display: flex;
-  box-sizing: border-box;
   width: 971px;
   padding: 30px 0 30px 57px;
 
@@ -498,7 +506,6 @@ input[type="radio"].visually-hidden {
 
 .gallery-info-date {
   margin: 0;
-  box-sizing: border-box;
   width: 153px;
 
   font-family: "Butler", "Times New Roman", serif;
@@ -513,7 +520,6 @@ input[type="radio"].visually-hidden {
 }
 
 .gallery-info-description {
-  box-sizing: border-box;
   width: 690px;
   margin: 0;
   padding: 0 0 2px 30px;
@@ -527,7 +533,6 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 57px;
 
-  box-sizing: border-box;
   width: 40px;
   height: 30px;
   padding: 0;
@@ -581,6 +586,7 @@ input[type="radio"].visually-hidden {
 
 .channel-description {
   margin: 0 0 57px;
+  padding-left: 5px;
 
   text-align: center;
 }
@@ -590,7 +596,6 @@ input[type="radio"].visually-hidden {
 }
 
 .channel-video-image {
-  box-sizing: border-box;
   width: 640px;
   height: 360px;
   margin: 0 0 40px;
@@ -623,7 +628,6 @@ input[type="radio"].visually-hidden {
 
 .channel-video-link {
   display: block;
-  box-sizing: border-box;
   width: 170px;
   margin: auto;
   padding: 15px 0 15px;
@@ -677,26 +681,20 @@ input[type="radio"].visually-hidden {
 }
 
 .blog-navigation-link:hover {
-  border-bottom: 1px solid #3a3a3a;
+  text-decoration: underline;
 }
 
 .blog-navigation-link:active {
   color: #e8be7b;
-  border-color: #e8be7b;
 }
 
 .current-link {
   color: #e8be7b;
 }
 
-.current-link:hover {
-  border-color: #e8be7b;
-}
-
 .posts-list {
-  margin: 0;
+  margin: 0 0 41px;
   padding: 0;
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
 
@@ -721,7 +719,7 @@ input[type="radio"].visually-hidden {
 }
 
 .post-image {
-  margin: 0 0 21px;;
+  margin: 0 0 22px;;
 }
 
 .post-image img {
@@ -735,17 +733,22 @@ input[type="radio"].visually-hidden {
 .post-link {
   display: block;
   width: 363px;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   text-transform: capitalize;
+  letter-spacing: -0.07px;
   color: #525252;
 }
 
 .post-link:hover {
   text-decoration: underline;
+}
+
+.post-link:active {
+  color: #e8be7b;
 }
 
 .highlight-post .post-link {
@@ -757,9 +760,154 @@ input[type="radio"].visually-hidden {
 
   font-family: "Butler", "Times New Roman", serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 18px;
+  letter-spacing: 0.25px;
   color: #757575;
+}
+
+.post-button {
+  display: block;
+  width: 170px;
+  padding: 14px 0 16px 4px;
+  margin: auto;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #3a3a3a;
+
+  border: 1px solid #3a3a3a;
+}
+
+.post-button:hover {
+  color: #ffffff;
+  border-color: #e8be7b;
+  background-color: #e8be7b;
+}
+
+.contacts {
+  padding: 113px 215px 121px;
+}
+
+.contacts-caption {
+  margin: 0 0 19px;
+
+  font-family: "Butler", "Times New Roman", serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 1.2px;
+  word-spacing: 3px;
+  text-align: center;
+  color: #2a2a2a;
+}
+
+.contacts-description {
+  margin: 0 0 67px;
+
+  font-weight: 400;
+  text-align: center;
+}
+
+.contacts-list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0 0 127px;
+  list-style: none;
+
+}
+
+.contact:not(:nth-child(n+3)) {
+  margin-right: 130px;
+}
+
+.contact {
+  position: relative;
+  min-width: 250px;
+  padding: 6px 0 0 10px;
+}
+
+.contact::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: -81px;
+
+  width: 62px;
+  height: 60px;
+
+
+}
+
+.address::before {
+  background-image: url("../img/address-icon.png");
+  background-repeat: no-repeat;
+}
+
+.number::before {
+  background-image: url("../img/number-icon.png");
+  background-repeat: no-repeat;
+  background-position: 24px 0;
+}
+
+.email::before {
+  background-image: url("../img/email-icon.png");
+  background-repeat: no-repeat;
+  background-position: 0 7px;
+}
+
+.contact-caption {
+  margin: 0 0 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.contact-description {
+  margin: 0;
+
+  font-family: "Butler", "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.address-description {
+  text-transform: capitalize;
+  letter-spacing: -0.25px;
+}
+
+.number-description {
+  text-transform: uppercase;
+}
+
+.email-caption {
+  margin-bottom: 7px;
+}
+
+.main-footer {
+  padding: 67px 215px 69px;
+
+  background-color: #3a3a3a;
+}
+
+.footer-navigation {
+  margin: auto;
+}
+
+@font-face {
+  font-family: "Butler";
+  src: url("butler_ultra_light.eot");
+  src: url("butler_ultra_light.eot?#iefix") format("embedded-opentype"),
+       url("butler_ultra_light.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
 }
 
 @font-face {
