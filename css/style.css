@@ -73,7 +73,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 22px 214px 18px 214px;
+  padding: 22px 214px 20px 214px;
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
@@ -126,17 +126,22 @@ input[type="radio"].visually-hidden {
 
 .top-bar-social-list {
   display: flex;
+  align-items: baseline;
   margin: 0;
-  padding: 5px 0 0;
+  padding: 3px 0 0;
   list-style: none;
 }
 
-.social-list-position img {
+.social-list-item img {
   display: block;
 }
 
-.social-list-position:not(:nth-child(5)) {
+.social-list-item:not(:last-child) {
   margin-right: 25px;
+}
+
+.header-social-link {
+  display: block;
 }
 
 .header-navigation-wrapper {
@@ -179,8 +184,13 @@ input[type="radio"].visually-hidden {
 }
 
 .navigation-list li:hover {
-  border-top: 2px solid #d6a862;
   padding-top: 43px;
+
+  border-top: 2px solid #d6a862;
+}
+
+.navigation-list li:active {
+  /* background-color: rgba(214, 168, 98, 0.3); */
 }
 
 .navigation-link,
@@ -235,7 +245,7 @@ input[type="radio"].visually-hidden {
   padding: 13px 0 15px;
 
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
 
@@ -395,7 +405,7 @@ input[type="radio"].visually-hidden {
 }
 
 .service-link:hover {
-  box-shadow: 1.805px 2.396px 16px 0px rgba(32, 32, 32, 0.1);
+  box-shadow: 1.805px 2.396px 16px 0px rgba(32, 32, 32, 0.2);
 }
 
 .about-link {
@@ -434,6 +444,10 @@ input[type="radio"].visually-hidden {
 
 .info-image {
   box-shadow: 10px 10px #e8be7b;
+}
+
+.info-image img {
+  display: block;
 }
 
 .info-section {
@@ -548,7 +562,7 @@ input[type="radio"].visually-hidden {
 }
 
 .gallery-button:hover {
-  /* border: 1px solid #ffffff; */
+  background-image: url("../img/gallery-button-hover.png");
 }
 
 .gallery-button:active {
@@ -635,9 +649,17 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
+  color: #3a3a3a;
+
+  border: 1px solid #3a3a3a;
+}
+
+.channel-video-link:hover {
   color: #ffffff;
 
   background-color: #e8be7b;
+
+  border-color: transparent;
 }
 
 .blog {
@@ -802,7 +824,7 @@ input[type="radio"].visually-hidden {
   margin: auto;
 
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
   text-align: center;
@@ -977,8 +999,12 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.social-link {
+.footer-social-link {
   color: #ffffff;
+}
+
+.footer-social-link:hover {
+  color: #e8be7b;
 }
 
 .inst-link {
@@ -986,6 +1012,10 @@ input[type="radio"].visually-hidden {
   background-position: 0 1.1em;
   background-repeat: repeat-x;
   background-size: 2px 6px;
+}
+
+.inst-link:hover {
+  background-image: linear-gradient(to bottom, rgba(214, 168, 98, 0.7) 33%, transparent 33%, transparent 66%, rgba(255, 255, 255, 0.7) 66%, rgba(255, 255, 255, 0.7));
 }
 
 .footer-return-button {
