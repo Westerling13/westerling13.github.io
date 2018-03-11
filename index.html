@@ -1,317 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>POSH</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-  </head>
-  <body>
-
-    <header class="main-header" id="header">
-      <div class="header-top-bar">
-        <div class="top-bar-info">
-          <p class="top-bar-number">+84 90 658 2725</p>
-          <p class="top-bar-adress">27 Ba Trieu St, Vietnam</p>
-        </div>
-        <ul class="top-bar-social-list">
-          <li class="social-list-item">
-            <a class="header-social-link" href="#">
-              <span class="visually-hidden">Twitter</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 512 512">
-                <path class="social-icon" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" fill="white"/>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a class="header-social-link" href="#">
-              <span class="visually-hidden">Facebook</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 264 512">
-                <path class="social-icon" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229" fill="white"/>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a class="header-social-link" href="#">
-              <span class="visually-hidden">Youtube</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 576 512">
-                <path class="social-icon" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" fill="white"/>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a class="header-social-link" href="#">
-              <span class="visually-hidden">Instagram</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 448 512">
-                <path class="social-icon" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="white"/>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a class="header-social-link" href="#">
-              <span class="visually-hidden">Flickr</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 448 512">
-                <path class="social-icon" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM144.5 319c-35.1 0-63.5-28.4-63.5-63.5s28.4-63.5 63.5-63.5 63.5 28.4 63.5 63.5-28.4 63.5-63.5 63.5zm159 0c-35.1 0-63.5-28.4-63.5-63.5s28.4-63.5 63.5-63.5 63.5 28.4 63.5 63.5-28.4 63.5-63.5 63.5z" fill="white"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="header-navigation-wrapper">
-        <div class="header-navigation">
-          <p class="main-logo">
-            <a><img src="img/main-logo.png" width="132" height="48" alt="POSH logo"></a>
-          </p>
-          <nav class="main-navigation">
-            <ul class="navigation-list">
-              <li><a class="navigation-link" href="#header">Home</a></li>
-              <li><a class="navigation-link" href="#services">Service</a></li>
-              <li><a class="navigation-link" href="#gallery">Gallery</a></li>
-              <li><a class="navigation-link" href="#channel">Channel</a></li>
-              <li><a class="navigation-link" href="#blog">Blog</a></li>
-              <li><a class="navigation-link" href="#team">Team</a></li>
-              <li><a class="navigation-link" href="#contact">Contact</a></li>
+  <html lang="ru">
+    <head>
+      <meta charset="utf-8" />
+      <title>Westerling</title>
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    </head>
+    <body>
+      <div class="page-content">
+        <div class="fix">
+          <aside class="contacts">
+            <section class="personal-info">
+              <h2 class="visually-hidden personal-info-title">Персональная информация</h2>
+              <p class="personal-info-avatar">
+                <img src="img/avatar.jpg" width="100" height="100" alt="Personal-avatar">
+              </p>
+              <b class="personal-info-name">Мюнц Александр, верстальщик.</b>
+              <p class="personal-info-text">
+                Верстаю валидно, семантично.
+              </p>
+            </section>
+            <ul class="social">
+              <li>
+                <a href="https://vk.com/id24020528" class="social-link vk-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.962 511.962" width="34" height="34">
+                    <path d="M507.4 370.47c-1.377-2.303-9.89-20.8-50.85-58.815-42.88-39.808-37.12-33.344 14.53-102.176 31.455-41.92 44.03-67.52 40.095-78.465-3.744-10.432-26.88-7.68-26.88-7.68l-76.928.448s-5.696-.768-9.952 1.76c-4.128 2.496-6.784 8.256-6.784 8.256s-12.19 32.447-28.447 60.03c-34.272 58.21-48 61.28-53.6 57.665-13.024-8.416-9.76-33.856-9.76-51.904 0-56.415 8.544-79.935-16.672-86.015-8.383-2.016-14.527-3.36-35.935-3.584-27.456-.287-50.72.097-63.872 6.53-8.768 4.287-15.52 13.855-11.392 14.4 5.09.67 16.61 3.103 22.72 11.423 7.905 10.72 7.617 34.848 7.617 34.848s4.544 66.4-10.592 74.657c-10.4 5.664-24.64-5.888-55.2-58.72-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.927-3.616-11.84-4.768-11.84-4.768l-73.15.448s-10.977.32-15.01 5.088c-3.583 4.257-.287 13.025-.287 13.025S58.663 275.4 123.495 342.95c59.488 61.92 127.008 57.857 127.008 57.857h30.592s9.248-1.024 13.952-6.112c4.352-4.672 4.192-13.44 4.192-13.44s-.61-41.056 18.463-47.104c18.784-5.95 42.912 39.68 68.48 57.25 19.328 13.28 34.016 10.367 34.016 10.367l68.383-.96S524.36 398.6 507.4 370.47z" fill="#FFF"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="skype:alexandr13042" class="social-link skype-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
+                    <path d="M497.28 310.336c3.712-16.672 5.632-33.952 5.632-51.68 0-132.96-109.312-240.768-244.192-240.768-14.208 0-28.16 1.216-41.76 3.52C195.136 7.872 169.312 0 141.632 0 63.392 0 0 62.496 0 139.648c0 25.76 7.104 49.856 19.456 70.624a238.61 238.61 0 0 0-4.96 48.384c0 132.992 109.344 240.8 244.192 240.8 15.296 0 30.24-1.408 44.736-4.032C323.392 505.984 346.176 512 370.4 512c78.208 0 141.6-62.528 141.6-139.616 0-22.304-5.312-43.328-14.72-62.048zm-113.312 63.392c-11.296 15.776-27.968 28.256-49.632 37.088-21.408 8.8-47.04 13.28-76.288 13.28-35.072 0-64.48-6.08-87.456-18.112-16.416-8.736-29.92-20.544-40.192-35.2-10.4-14.72-15.616-29.344-15.616-43.488 0-8.8 3.424-16.448 10.176-22.688 6.688-6.24 15.264-9.344 25.504-9.344 8.384 0 15.616 2.464 21.504 7.36 5.6 4.704 10.432 11.68 14.304 20.608 4.32 9.792 9.024 18.048 13.984 24.48 4.832 6.304 11.712 11.552 20.512 15.68 8.864 4.096 20.8 6.24 35.456 6.24 20.192 0 36.768-4.256 49.184-12.64 12.192-8.16 18.08-18.016 18.08-30.048 0-9.472-3.104-16.96-9.408-22.816-6.656-6.144-15.424-10.912-26.048-14.208-11.104-3.392-26.176-7.104-44.8-10.944-25.376-5.344-46.912-11.68-64-18.88-17.504-7.36-31.648-17.536-41.952-30.272-10.496-12.96-15.808-29.184-15.808-48.256 0-18.176 5.568-34.56 16.576-48.704 10.912-14.048 26.848-25.024 47.424-32.48 20.256-7.392 44.352-11.136 71.648-11.136 21.792 0 40.96 2.496 56.992 7.424 16.096 4.928 29.664 11.584 40.32 19.808 10.752 8.32 18.752 17.12 23.744 26.336 5.056 9.28 7.648 18.528 7.648 27.456 0 8.608-3.36 16.448-10.016 23.232-6.72 6.88-15.168 10.336-25.088 10.336-9.024 0-16.128-2.208-21.024-6.464-4.576-4-9.344-10.24-14.592-19.136-6.08-11.392-13.472-20.384-21.92-26.752-8.224-6.176-21.92-9.248-40.8-9.248-17.472 0-31.744 3.456-42.304 10.304-10.176 6.56-15.136 14.112-15.136 23.072 0 5.472 1.6 10.048 4.896 13.984 3.456 4.224 8.352 7.84 14.56 10.912 6.4 3.168 13.024 5.728 19.648 7.52 6.784 1.856 18.144 4.64 33.792 8.192 19.776 4.16 37.92 8.864 53.984 13.952 16.288 5.088 30.304 11.392 41.824 18.784 11.68 7.52 20.928 17.12 27.52 28.64 6.592 11.616 9.92 25.856 9.92 42.432-.032 19.808-5.792 37.888-17.12 53.696z" fill="#FFF"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Westerling13" class="social-link github-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
+                    <path d="M255.968 5.33C114.624 5.33 0 120.4 0 262.352 0 375.89 73.344 472.21 175.104 506.225c12.8 2.368 17.472-5.568 17.472-12.384 0-6.11-.224-22.27-.352-43.71-71.2 15.52-86.24-34.465-86.24-34.465-11.616-29.696-28.416-37.6-28.416-37.6-23.264-15.936 1.728-15.616 1.728-15.616 25.696 1.823 39.2 26.495 39.2 26.495 22.848 39.264 59.936 27.936 74.528 21.344 2.304-16.61 8.928-27.937 16.256-34.37-56.832-6.495-116.608-28.543-116.608-127.007 0-28.064 9.984-51.008 26.368-68.992-2.656-6.495-11.424-32.64 2.496-68 0 0 21.504-6.91 70.4 26.337 20.416-5.696 42.304-8.544 64.096-8.64 21.728.128 43.648 2.944 64.096 8.672 48.864-33.25 70.336-26.337 70.336-26.337 13.952 35.392 5.184 61.504 2.56 68 16.416 17.984 26.304 40.928 26.304 68.992 0 98.72-59.84 120.448-116.864 126.816 9.184 7.937 17.376 23.617 17.376 47.585 0 34.368-.32 62.08-.32 70.496 0 6.88 4.608 14.88 17.6 12.353C438.72 472.145 512 375.857 512 262.353 512 120.4 397.376 5.33 255.968 5.33z" fill="#FFF"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="email:a_munz@list.ru" class="social-link email-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
+                    <path d="M31 203.21V467c0 6.927 1.703 13.412 4.51 19.28L174.79 347 31 203.21zM337.21 347l139.28 139.28c2.807-5.868 4.51-12.353 4.51-19.28V203.21L337.21 347zM256 152c-8.262 0-15 6.724-15 15s6.738 15 15 15c10.388 0 13.143-7.123 14.79-16.033-.56-7.77-6.894-13.967-14.79-13.967zM309.79 362H202.21L56.72 507.49C62.59 510.297 69.074 512 76 512h360c6.927 0 13.412-1.703 19.28-4.51L309.79 362zM46 175.79l45 45v-90zM421 130.79v90l45-45z" fill="#FFF"/>
+                    <path d="M371.78 0H137.407C128.346 0 121 7.345 121 16.406V250.79L202.21 332h107.58L391 250.79V19.22C391 8.604 382.395 0 371.78 0zm-85.79 200.305C278.01 207.495 267.56 212 256 212c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45c0 19.828 30 19.828 30 0 0-41.353-33.633-75-75-75s-75 33.647-75 75c0 25.664 12.95 49.292 34.658 63.208 22.266 14.238 49.834 15.586 75.703 3.706 17.884-8.308 30.607 18.95 12.54 27.246-34.383 15.818-72.57 14.7-104.414-5.698C169.136 236.01 151 202.947 151 167c0-57.89 47.11-105 105-105s105 47.11 105 105c0 38.56-45.848 59.637-75.01 33.305z" fill="#FFF"/>
+                  </svg>
+                </a>
+              </li>
             </ul>
-          </nav>
+          </aside>
         </div>
-      </div>
-      <div class="header-about">
-        <strong class="about-title">It’s <span>fun</span> to make things up</strong>
-        <p>Have you ever wondered if what you know about herbal breast enlargement is accurate?</p>
-        <div class="header-button-block">
-          <a href="#" class="header-button header-about-button">About us</a>
-          <a href="#" class="header-button header-video-button">Watch video</a>
-        </div>
-      </div>
-      <div class="slider">
-        <form class="slider-form">
-          <label class="slider-radio-label">
-            <input class="visually-hidden slider-radio" type="radio" id="picture-1" name="toggle" checked>
-            <span class="radio-indicator" ></span>
-          </label>
-          <label class="slider-radio-label">
-            <input class="visually-hidden slider-radio" type="radio" id="picture-2" name="toggle">
-            <span class="radio-indicator" ></span>
-          </label>
-          <label class="slider-radio-label">
-            <input class="visually-hidden slider-radio" type="radio" id="picture-3" name="toggle">
-            <span class="radio-indicator" ></span>
-          </label>
-          <label class="slider-radio-label">
-            <input class="visually-hidden slider-radio" type="radio" id="picture-4" name="toggle">
-            <span class="radio-indicator" ></span>
-          </label>
-          <label class="slider-radio-label">
-            <input class="visually-hidden slider-radio" type="radio" id="picture-5" name="toggle">
-            <span class="radio-indicator" ></span>
-          </label>
-        </form>
-      </div>
-    </header>
 
-    <main class="container">
+      <main class="container">
 
-      <h1 class="visually-hidden">POSH - project to prepare for events</h1>
-
-      <section class="service" id="services">
-        <div class="service-text-wrapper">
-          <h2 class="service-caption">Our services</h2>
-          <p class="service-description">
-            Vastly improved treatments and increased social acceptance has lead to cosmetic
+        <section class="about">
+          <h2 class="about-title">Обо мне</h2>
+          <p class="about-text">
+            Мне 23 года и я начинающий верстальщик. Я хочу стать фронтенд-разработчиком
+и в данный момент активно изучаю JavaScrypt, препроцессоры и адаптивную верстку.
+Я успешно закончил базовый интенсив в HTML Academy и умею верстать валидно и
+семантично. У меня пока нет опыта работы.
           </p>
-        </div>
-        <ul class="services-list">
-          <li>
-            <a class="service-link about-link" href="#">About</a>
-          </li>
-          <li>
-            <a class="service-link wedding-link" href="#">Wedding</a>
-          </li>
-          <li>
-            <a class="service-link party-link" href="#">Party</a>
-          </li>
-          <li>
-            <a class="service-link beauty-link" href="#">Beauty box</a>
-          </li>
-          <li>
-            <a class="service-link course-link" href="#">Course</a>
-          </li>
-        </ul>
-        <div class="service-info">
-          <div class="info-image">
-            <img src="img/info-image.jpg" width="630" height="380" alt="Info image of a girl with a bouquet">
-          </div>
-          <section class="info-section">
-            <h3 class="info-section-caption">To keep makeup looking fresh take a powder</h3>
-            <p class="info-section-text">
-              Hydroderm is the highly desired anti-aging cream on the block. This serum restricts the occurrence of early aging sings on the skin and keeps the skin younger, tighter and healthier.
-            </p>
-            <a href="#" class="info-section-link">Learn more</a>
-          </section>
-        </div>
-      </section>
+        </section>
+        <section class="works">
+          <h2 class="works-title">Мои работы</h2>
+          <ul class="works-list">
 
-      <section class="gallery" id="gallery">
-        <h2 class="visually-hidden">Gallery</h2>
-        <div class="gallery-info">
-          <p class="gallery-info-date">
-            Sep 24
-          </p>
-          <p class="gallery-info-description">
-            Have you ever wondered if what you know about herbal breast enlargement is accurate? Consider the following paragraphs and compare what you know to the latest info on herbal breast enlargement. Women are often not happy with their breast size...
-          </p>
-          <button class="gallery-button back-button">
-            <span class="visually-hidden">Back</span>
-          </button>
-          <button class="gallery-button next-button">
-            <span class="visually-hidden">Next</span>
+            <li class="works-list-item">
+              <p class="works-image">
+                <img src="img/gllacy.jpg" width="460" height="250" alt="Gllacy picture">
+                <a class="work-link-hidden index-link-hidden" href="gllacy/index.html">index.html</a>
+                <a class="work-link-hidden catalog-link-hidden" href="gllacy/catalog.html">catalog.html</a>
+              </p>
+              <div class="works-description">
+                <h3 class="works-item-title">Gllacy</h3>
+                <p class="works-item-text">
+                  Интернет-магазин мороженого
+                </p>
+              </div>
+              <a class="work-link gllacy-link" href="gllacy/index.html">Посмотреть</a>
+            </li>
 
-          </button>
-        </div>
-      </section>
+            <li class="works-list-item">
+              <p class="works-image">
+                <img src="img/posh.jpg" width="460" height="250" alt="POSH picture">
+              </p>
+              <div class="works-description">
+                <h3 class="works-item-title">POSH</h3>
+                <p class="works-item-text">
+                  Подготовка мероприятий
+                </p>
+              </div>
+              <a class="work-link gllacy-link" href="POSH/index.html">Посмотреть</a>
+            </li>
 
-      <section class="channel" id="channel">
-        <h2 class="channel-caption">Channel</h2>
-        <p class="channel-description">
-          Vastly improved treatments and increased social
-        </p>
-        <div class="channel-video">
-          <p class="channel-video-image">
-            <img src="img/channel-video.jpg" alt="Video preview">
-          </p>
-          <button class="channel-video-button">
-            <img src="img/video-play-icon.png" width="80" height="80" alt="Video play button">
-          </button>
-        </div>
-        <a href="#" class="channel-video-link">More video</a>
-      </section>
-
-      <section class="blog" id="blog">
-        <h2 class="blog-caption">Latest blog</h2>
-        <ul class="blog-navigation">
-          <li><a class="blog-navigation-link" href="#">all</a></li>
-          <li><a class="blog-navigation-link current-link" href="#">reviews</a></li>
-          <li><a class="blog-navigation-link" href="#">looks</a></li>
-          <li><a class="blog-navigation-link" href="#">lifestyles</a></li>
-          <li><a class="blog-navigation-link" href="#">tips</a></li>
-          <li><a class="blog-navigation-link" href="#">tutorials</a></li>
-        </ul>
-        <div class="posts">
-          <ul class="posts-list">
-            <li class="highlight-post">
-              <p class="post-image">
-                <img src="img/highlight.jpg" width="771" height="301" alt="Highlight image">
-              </p>
-              <a class="post-link" href="#">Hollywood hairstyles do not require a trip to a high priced salon or beautician</a>
-              <p class="post-signature">
-                Eugenia Frank
-                <time datetime="04-22">/ April 22</time>
-              </p>
-            <span class="highlight-signature">Highlight post</span>
-            </li>
-            <li>
-              <p class="post-image">
-                <img src="img/post-1.jpg" width="370" height="300" alt="Post image">
-              </p>
-              <a class="post-link" href="#">Forehead lift brow lift temporal lift for head rejuvenation</a>
-              <p class="post-signature">
-                Eugenia Frank
-                <time datetime="04-22">/ April 22</time>
-              </p>
-            </li>
-            <li>
-              <p class="post-image">
-                <img src="img/post-2.jpg" width="370" height="300" alt="Post image">
-              </p>
-              <a class="post-link" href="#">Breast enlargement exercises cheapest inborn sense promoting breast lump</a>
-              <p class="post-signature">
-                Eugenia Frank
-                <time datetime="04-22">/ April 22</time>
-              </p>
-            </li>
-            <li>
-              <p class="post-image">
-                <img src="img/post-3.jpg" width="370" height="300" alt="Post image">
-              </p>
-              <a class="post-link" href="#">Curling irons are as individual as the women who use them</a>
-              <p class="post-signature">
-                Eugenia Frank
-                <time datetime="04-22">/ April 22</time>
-              </p>
-            </li>
-            <li>
-              <p class="post-image">
-                <img src="img/post-4.jpg" width="370" height="300" alt="Post image">
-              </p>
-              <a class="post-link" href="#">Hollywood hairstyles do not require a trip to a high priced salon or beautician</a>
-              <p class="post-signature">
-                Eugenia Frank
-                <time datetime="04-22">/ April 22</time>
-              </p>
-            </li>
           </ul>
-          <a class="post-button" href="#">See more</a>
-        </div>
-      </section>
+        </section>
 
-      <section class="contacts" id="contact">
-        <h2 class="contacts-caption">Contact</h2>
-        <p class="contacts-description">
-          Vastly improved treatments and increased social
-        </p>
-        <ul class="contacts-list">
-          <li class="contact address">
-            <h3 class="contact-caption adress-caption">Address</h3>
-            <p class="contact-description address-description">
-              27 Ba Trieu St. Hue, Vietnam
-            </p>
-          </li>
-          <li class="contact number">
-            <h3 class="contact-caption number-caption">Phone numbers</h3>
-            <p class="contact-description number-description">
-              +84 90 658 2725
-            </p>
-          </li>
-          <li class="contact email">
-            <h3 class="contact-caption email-caption">Email contact</h3>
-            <p class="contact-description email-description">
-              junoteamvn@gmail.com
-            </p>
-          </li>
-        </ul>
-      </section>
+      </main>
+    </div>
 
-    </main>
-
-    <footer class="main-footer">
-      <nav class="footer-navigation">
-        <ul class="footer-navigation-list">
-          <li><a class="footer-navigation-link" href="#header">Home</a></li>
-          <li><a class="footer-navigation-link" href="#services">Service</a></li>
-          <li><a class="footer-navigation-link" href="#gallery">Gallery</a></li>
-          <li><a class="footer-navigation-link" href="#channel">Channel</a></li>
-          <li><a class="footer-navigation-link" href="#blog">Blog</a></li>
-          <li><a class="footer-navigation-link" href="#team">Team</a></li>
-          <li><a class="footer-navigation-link" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <p class="footer-logo">
-        <a><img src="img/footer-logo.png" width="180" height="65" alt="footer POSH logo"></a>
-      </p>
-      <ul class="social-list">
-        <li>
-          <a class="footer-social-link fb-link" href="#">facebook</a>
-        </li>
-        <li>
-          <a class="footer-social-link inst-link" href="#">instagram</a>
-        </li>
-        <li>
-          <a class="footer-social-link yt-link" href="#">youtube</a>
-        </li>
-      </ul>
-      <a class="footer-return-button" href="#header">Go to top</a>
-    </footer>
-
-  </body>
-</html>
+    <script src="js/script.js">
+    </script>
+    </body>
+  </html>
