@@ -1,0 +1,213 @@
+<!doctype html>
+<html class="page no-js" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+<body class="page__body">
+  <div class="page__layout"></div>
+
+<header class="header"></header>
+
+<div class="page__wrapper">
+  <main class="page__main">
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link">Оформление заказа</a>
+      </li>
+    </ul>
+    <section class="checkout">
+      <ul class="checkout__nav">
+        <li class="checkout__item">
+          <a class="checkout__button checkout__button--active checkout__button--person">Кому доставить</a>
+        </li>
+        <li class="checkout__item">
+          <a href="#" class="checkout__button checkout__button--method">Способ доставки</a>
+        </li>
+        <li class="checkout__item">
+          <a href="#" class="checkout__button checkout__button--payment">Способ оплаты</a>
+        </li>
+        <li class="checkout__item">
+          <a href="#" class="checkout__button checkout__button--confirm">Проверка и подтверждение</a>
+        </li>
+      </ul>
+      <h1 class="checkout__title">Оформление заказа</h1>
+      <div class="checkout__top-bar">
+        <a href="#" class="checkout__nav-button">Кому доставить</a>
+      </div>
+    
+    
+      <section class="cart">
+        <h2 class="visually-hidden">Корзина</h2>
+        <div class="cart__top-bar">
+          <b class="cart__order">Ваш заказ</b>
+          <span class="cart__count">3 товара</span>
+        </div>
+        <ul class="cart__list">
+            <li class="cart__item">
+              <a href="#" class="cart__picture">
+                <img src="assets/img/item-01-l.jpg" alt="Фото товара">
+              </a>
+              <div class="cart__item-wrapper">
+                <div class="cart__item-info">
+                  <a href="#" class="cart__link">Кроссовки мужские Nike мужские Nike</a>
+                  <p class="cart__item-color">Черный</p>
+                </div>
+                <p class="cart__item-count">1 шт.</p>
+                <div class="cart__price">
+                  <p class="cart__price-tag">15 000</p>
+                  <p class="cart__discount">Скидка: 330</p>
+                </div>
+              </div>
+              <button class="cart__del-button">Удалить</button>
+            </li>
+            <li class="cart__item">
+              <a href="#" class="cart__picture">
+                <img src="assets/img/item-02-l.jpg" alt="Фото товара">
+              </a>
+              <div class="cart__item-wrapper">
+                <div class="cart__item-info">
+                  <a href="#" class="cart__link">Кроссовки мужские Nike мужские Nike</a>
+                  <p class="cart__item-color">Черный</p>
+                </div>
+                <p class="cart__item-count">1 шт.</p>
+                <div class="cart__price">
+                  <p class="cart__price-tag">3 500</p>
+                  <p class="cart__discount">Скидка: 330</p>
+                </div>
+              </div>
+              <button class="cart__del-button">Удалить</button>
+            </li>
+            <li class="cart__item">
+              <a href="#" class="cart__picture">
+                <img src="assets/img/item-03-l.jpg" alt="Фото товара">
+              </a>
+              <div class="cart__item-wrapper">
+                <div class="cart__item-info">
+                  <a href="#" class="cart__link">Кроссовки мужские Nike мужские Nike</a>
+                  <p class="cart__item-color">Черный</p>
+                </div>
+                <p class="cart__item-count">1 шт.</p>
+                <div class="cart__price">
+                  <p class="cart__price-tag">8 700</p>
+                  <p class="cart__discount">Скидка: 330</p>
+                </div>
+              </div>
+              <button class="cart__del-button">Удалить</button>
+            </li>
+        </ul>
+        <div class="cart__bottom-bar">
+          <form action="https://echo.htmlacademy.ru" class="cart__promocode" method="post" id="promo-form">
+            <label class="cart__input-wrapper">
+              <input class="cart__input" type="text" name="promocode" placeholder="XXXXXXX" required>
+            </label>
+            <button class="cart__promo-button" type="submit">Применить промокод</button>
+          </form>
+          <p class="cart__sum">Сумма: <span>60 000</span></p>
+        </div>
+      </section>
+    
+      <div class="checkout__tabs" id="tabs">
+        <a href="#tabs-1" class="checkout__tab checkout__tab--active" id="reg-button" data-type="#signUp">
+          Для новых покупателей
+        </a>
+        <a href="#tabs-2" class="checkout__tab" id="auth-button" data-type="#signIn">Войти</a>
+      </div>
+      <div class="checkout__tabs checkout__tabs--mobile">
+        <a href="#" class="checkout__button-mobile" id="auth-modal-button" >Войти</a>
+        <a href="#" class="checkout__tab-mobile checkout__tab-mobile--active" id="reg-button-mobile" data-type="#signUp">Для новых покупателей</a>
+      </div>
+    
+      <section class="checkout__section checkout__section--active checkout__section--reg user-section" id="signUp">
+        <h2 class="visually-hidden">Регистрация</h2>
+        <form class="user-section__form" action="https://echo.htmlacademy.ru" method="post" id="reg">
+          <div class="user-section__form-wrapper">
+      
+            <label class="user-section__input-wrapper">
+              <span class="user-section__label">Ваше имя<span>*</span></span>
+              <input type="text" class="user-section__input" name="name" required>
+            </label>
+      
+            <label class="user-section__input-wrapper user-section__input-wrapper--phone">
+              <span class="user-section__label">Телефон<span>*</span></span>
+              <input type="text" class="user-section__input" id="phone" placeholder="+ 7 (___) ___ - __ - __" name="phone" required>
+              <span class="user-section__input-caption">Необходим для уточнения деталей заказа</span>
+            </label>
+      
+            <label class="user-section__input-wrapper">
+              <span class="user-section__label">Ваша фамилия<span>*</span></span>
+              <input type="text" class="user-section__input" name="surname" required>
+            </label>
+      
+            <label class="user-section__input-wrapper user-section__input-wrapper--email">
+              <span class="user-section__label">E-mail<span>*</span></span>
+              <input type="email" class="user-section__input" name="email" required>
+              <span class="user-section__input-caption">Пришлем информацию о заказе</span>
+            </label>
+      
+          </div>
+          <label class="user-section__checkbox-wrapper">
+            <input type="checkbox" class="user-section__checkbox">
+            <span class="user-section__checkbox-indicator"></span>
+            <span class="user-section__checkbox-text">Получать информацию о скидках и секретных распродажах для клиентов FITSENSE.<br> Отличный способ следить за нашими лучшими предложениями.</span>
+          </label>
+          <button class="user-section__button" type="submit">Далее</button>
+          <p class="user-section__info">Выбрать способ доставки</p>
+        </form>
+      </section>
+      <section class="checkout__section checkout__section--auth user-section" id="signIn">
+        <h2 class="visually-hidden">Авторизация</h2>
+        <form class="user-section__form" action="https://echo.htmlacademy.ru" method="post" id="auth">
+          <div class="user-section__form-wrapper">
+      
+            <label class="user-section__input-wrapper">
+              <span class="user-section__label">Логин<span>*</span></span>
+              <input type="text" class="user-section__input" name="login">
+            </label>
+      
+            <label class="user-section__input-wrapper">
+              <span class="user-section__label">Пароль<span>*</span></span>
+              <input type="password" class="user-section__input" name="password">
+            </label>
+      
+          </div>
+          <button class="user-section__button" type="submit">Войти</button>
+          <p class="user-section__info">Выбрать способ доставки</p>
+        </form>
+      </section>
+      <section class="auth-modal" id="auth-modal">
+        <h2 class="visually-hidden">Мобильная авторизация</h2>
+        <form class="auth-modal__form" action="https://echo.htmlacademy.ru" method="post" id="auth-mobile">
+          <div class="auth-modal__form-wrapper">
+      
+            <label class="auth-modal__input-wrapper">
+              <span class="auth-modal__label">Логин<span>*</span></span>
+              <input type="text" class="auth-modal__input" name="login">
+            </label>
+      
+            <label class="auth-modal__input-wrapper">
+              <span class="auth-modal__label">Пароль<span>*</span></span>
+              <input type="password" class="auth-modal__input" name="password">
+            </label>
+      
+          </div>
+          <button class="auth-modal__button" type="submit">Войти</button>
+          <p class="auth-modal__info">Выбрать способ доставки</p>
+        </form>
+      </section>
+    </section>
+    
+  </main>
+</div>
+
+<footer class="footer"></footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
