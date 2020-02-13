@@ -10,7 +10,7 @@
     <header class="header">
       <div class="header__wrapper">
         <div class="header__image"><img src="img/avatar.png" alt="Александ Мюнц"></div><b class="header__name">Александр Мюнц</b>
-        <p class="header__text">Junior frontend developer based in Krasnodar</p>
+        <p class="header__text">Junior backend developer (Python)<br>based in Krasnodar</p>
         <button class="header__button">Связаться</button>
       </div>
     </header>
@@ -18,22 +18,22 @@
       <div class="about__wrapper">
         <h2 class="about__title">Про меня</h2>
         <ul class="about__list">
-          <li class="about__item about__item--active"><a class="about__button">
-              <h3 class="about__item-title">Навыки</h3></a>
-            <p class="about__text">
-               Мне 23 года и я занимаюсь веб-разработкой.<br>Я умею делать адаптивную, ретиновую, семантичную, валидную верстку. Знаю JS на базовом уровне.
-              В работе использую Gulp, Sass/Less, Pug, методологию БЭМ, SVG-спрайты. Оптимизирую шрифты и изображения.
-            </p>
+          <li class="about__item about__item--active"><a class="about__button" href="#">
+              <h3 class="about__item-title">Навыки</h3>
+              <!-- - i.about__icon--></a>
+            <p class="about__text">Мне 24 года и я начинающий backend-разработчик.<br>В качестве основного языка программирования я выбрал Python.<br>Владею основами Python3, Django, ООП, Git.<br>Пишу код в PyCharm на Ubuntu.<br>У меня также есть опыт работы верстальщиком (HTML, CSS, JS).</p>
           </li>
-          <li class="about__item about__item--active"><a class="about__button">
+          <li class="about__item about__item--active"><a class="about__button" href="#">
               <h3 class="about__item-title">Образование</h3></a>
             <p class="about__text">
-               Я успешно прошел обучение на верстальщика в HTML Academy. Ссылки на сертификаты:<br><a class="about__link" href="https://assets.htmlacademy.ru/certificates/intensive/45/181069.pdf" target="_blank">- Базовый HTML и CSS</a><a class="about__link" href="https://assets.htmlacademy.ru/certificates/intensive/71/181069.pdf" target="_blank">- Профессиональный HTML & CSS, уровень 2</a></p>
+              Активно занимаюсь самообразованием, читаю книги, документации и прохожу курсы.
+              Курсы по Python на Coursera:<br><a class="about__link" href="https://coursera.org/share/bc7487d7c6a174738f5173f5eae718a2" target="_blank">- Погружение в Python</a><a class="about__link" href="https://coursera.org/share/6952df8242788da682e9ae23bcbbcaef" target="_blank">- ООП и паттерны проектирования в Python</a><br>Также успешно прошел обучение на верстальщика в HTML Academy. Ссылки на сертификаты:<br><a class="about__link" href="https://assets.htmlacademy.ru/certificates/intensive/45/181069.pdf" target="_blank">- Базовый HTML и CSS</a><a class="about__link" href="https://assets.htmlacademy.ru/certificates/intensive/71/181069.pdf" target="_blank">- Профессиональный HTML & CSS, уровень 2</a>
+            </p>
           </li>
-          <li class="about__item about__item--active"><a class="about__button">
+          <li class="about__item about__item--active"><a class="about__button" href="#">
               <h3 class="about__item-title">Планы</h3></a>
             <p class="about__text">
-               В данный момент я продолжаю активно изучать JavaScript, в том числе библиотеку React, и постепенно становлюсь фронтенд-разработчиком.</p>
+               В данный момент я активно изучаю Python и другие технологии экосистемы веб-разработки.<br>Я планирую овладеть всеми необходимыми фундаментальными и актуальными знаниями и стать полноценным backend-разработчиком.</p>
           </li>
         </ul>
       </div>
@@ -42,57 +42,21 @@
       <div class="works__wrapper">
         <h2 class="works__title">Мои работы</h2>
         <p class="works__caption">
-           Собраны избранные тестовые проекты</p>
+           Собраны избранные тестовые и учебные проекты</p>
         <ul class="works__list">
           <li class="works__item">
-            <h3 class="works__item-title">Седона</h3><a class="works__link" href="projects/sedona/index.html"> westerling13.github.io/sedona</a>
-            <div class="works__images"><img src="img/work-00.jpg" width="" height="" alt="Работа №1"></div>
+            <h3 class="works__item-title">social_project</h3><a class="works__link" href="https://westerling.pythonanywhere.com"> westerling.pythonanywhere.com</a>
+            <div class="works__images"><a class="works__image-link" href="https://westerling.pythonanywhere.com"><img src="img/social_project.png" width="" height="" alt="social_project"></a></div>
             <div class="works__toggles">
               <button class="works__toggle works__toggle--checked"><span></span></button>
-              <button class="works__toggle"><span></span></button>
-              <button class="works__toggle"><span></span></button>
-              <button class="works__toggle"><span></span></button>
+              <!--button.works__toggle-->
+              <!--  span-->
+              <!--button.works__toggle-->
+              <!--  span-->
+              <!--button.works__toggle-->
+              <!--  span-->
             </div>
-            <p class="works__description">
-              Туристический городок в Аризоне.
-              Адаптивная верстка главной страницы, страницы галереи и страницы отзыва.
-            </p>
-          </li>
-          <li class="works__item">
-            <h3 class="works__item-title">Мишка</h3><a class="works__link" href="projects/mishka/index.html"> westerling13.github.io/mishka</a>
-            <div class="works__images"><img src="img/work-01.jpg" width="" height="" alt="Работа №2"></div>
-            <div class="works__toggles">
-              <button class="works__toggle works__toggle--checked"><span></span></button>
-              <button class="works__toggle"><span></span></button>
-              <button class="works__toggle"><span></span></button>
-              <button class="works__toggle"><span></span></button>
-            </div>
-            <p class="works__description">
-              Магазин товаров ручной работы.
-              Адаптивная верстка главной страницы, страницы каталога и страницы формы.
-            </p>
-          </li>
-          <li class="works__item">
-            <h3 class="works__item-title">Fitsense</h3><a class="works__link" href="projects/fitsense/index.html"> westerling13.github.io/fitsense</a>
-            <div class="works__images"><img src="img/work-02.jpg" width="" height="" alt="Работа №3"></div>
-            <div class="works__toggles">
-              <button class="works__toggle works__toggle--checked"><span></span></button>
-              <button class="works__toggle"><span></span></button>
-              <button class="works__toggle"><span></span></button>
-              <button class="works__toggle"><span></span></button>
-            </div>
-            <p class="works__description">Адаптивная страница оформления заказов интернет-магазина Fitsense.</p>
-          </li>
-          <li class="works__item">
-            <h3 class="works__item-title">Magnum</h3><a class="works__link" href="projects/magnum/index.html">westerling13.github.io/magnum</a>
-            <div class="works__images"><img src="img/work-03.jpg" width="" height="" alt="Работа №4"></div>
-            <div class="works__toggles">
-              <button class="works__toggle works__toggle--checked"><span></span></button>
-              <button class="works__toggle"><span></span></button>
-              <button class="works__toggle"><span></span></button>
-              <button class="works__toggle"><span></span></button>
-            </div>
-            <p class="works__description">Главная страница сайта транспортной компании.</p>
+            <p class="works__description">Учебный проект развлекательного сайта с короткими историями.<br>Выполнен на Django3 c использованием PostgeSQL. Верстка на Bootstrap4.<br>Это не финальная версия, проект активно исправляется, дорабатывается и улучшается.</p>
           </li>
         </ul>
       </div>
@@ -110,7 +74,7 @@
           можете связаться со мной в социальных сетях или написать сообщение
           с помощью формы ниже.
         </p>
-        <form class="footer__form" action="https://formspree.io/alex.munz@yandex.ru" method="post">
+        <form class="footer__form" action="https://formspree.io/a_munz@list.ru" method="post">
           <input class="footer__input" type="text" name="name" placeholder="Как вас зовут?">
           <input class="footer__input" type="mail" name="email" placeholder="Почтовый ящик">
           <textarea class="footer__input footer__input--text" name="message" placeholder="Сообщение"></textarea>
